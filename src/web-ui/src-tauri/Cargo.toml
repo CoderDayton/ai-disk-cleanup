@@ -1,0 +1,61 @@
+[package]
+name = "ai-disk-cleaner"
+version = "0.2.0"
+description = "AI Disk Cleaner - Modern Web UI with Tauri"
+authors = ["AI Disk Cleaner Team"]
+edition = "2021"
+
+[lib]
+name = "ai_disk_cleaner_lib"
+crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "ai-disk-cleaner"
+path = "src/main.rs"
+
+[dependencies]
+# Tauri 2.0 core dependencies
+tauri = { version = "2.0", features = [
+  "rustls-tls",
+  "icon-ico",
+  "icon-png",
+  "protocol-asset",
+] }
+tauri-plugin-shell = "2.0"
+tauri-plugin-dialog = "2.0"
+tauri-plugin-fs = "2.0"
+tauri-plugin-notification = "2.0"
+tauri-plugin-os = "2.0"
+
+# Serialization and deserialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Utilities
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true
+
+[profile.dev]
+opt-level = 0
+debug = true
+overflow-checks = true

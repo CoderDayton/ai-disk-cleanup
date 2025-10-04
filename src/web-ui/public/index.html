@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Disk Cleaner - Intelligent file management with AI-powered recommendations" />
+    <meta name="keywords" content="disk cleaner, file management, AI, storage optimization, cleanup" />
+    <meta name="author" content="AI Disk Cleaner Team" />
+
+    <!-- Security headers for Tauri -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data: https:; connect-src 'self' ws: wss: http: https: ipc: http://ipc.localhost" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Theme detection -->
+    <script>
+      // System theme detection for immediate flash-free theme application
+      (function() {
+        const theme = localStorage.getItem('ai-disk-cleaner-theme') || 'system';
+        if (theme === 'system') {
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', prefersDark);
+        } else {
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        }
+      })();
+    </script>
+
+    <title>AI Disk Cleaner</title>
+  </head>
+
+  <body class="font-sans antialiased">
+    <!-- Loading splash screen -->
+    <div id="splash" class="fixed inset-0 bg-background flex items-center justify-center z-50">
+      <div class="text-center space-y-4">
+        <!-- Logo/Icon placeholder -->
+        <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto">
+          <svg class="w-8 h-8 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+
+        <!-- Loading text -->
+        <div class="space-y-2">
+          <h1 class="text-xl font-semibold text-foreground">AI Disk Cleaner</h1>
+          <p class="text-sm text-muted-foreground">Loading your intelligent file manager...</p>
+        </div>
+
+        <!-- Loading spinner -->
+        <div class="flex justify-center">
+          <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- React app root -->
+    <div id="root" class="hidden"></div>
+
+    <!-- Error fallback -->
+    <script>
+      window.addEventListener('error', function(e) {
+        const splash = document.getElementById('splash');
+        if (splash) {
+          splash.innerHTML = `
+            <div class="text-center space-y-4 max-w-md mx-auto px-4">
+              <div class="w-16 h-16 bg-destructive rounded-2xl flex items-center justify-center mx-auto">
+                <svg class="w-8 h-8 text-destructive-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <div class="space-y-2">
+                <h1 class="text-xl font-semibold text-foreground">Application Error</h1>
+                <p class="text-sm text-muted-foreground">Failed to load AI Disk Cleaner. Please restart the application.</p>
+                <details class="text-xs text-muted-foreground">
+                  <summary class="cursor-pointer hover:text-foreground">Error details</summary>
+                  <pre class="mt-2 p-2 bg-muted rounded text-left overflow-auto">${e.message || 'Unknown error'}</pre>
+                </details>
+              </div>
+              <button onclick="window.location.reload()" class="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                Restart Application
+              </button>
+            </div>
+          `;
+        }
+      });
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

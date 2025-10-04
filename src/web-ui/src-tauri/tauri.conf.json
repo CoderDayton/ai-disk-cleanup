@@ -1,0 +1,134 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.0",
+  "productName": "AI Disk Cleaner",
+  "version": "0.2.0",
+  "identifier": "com.aidiskcleaner.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "withGlobalTauri": false
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "title": "AI Disk Cleaner",
+        "label": "main",
+        "url": "/",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "center": true,
+        "resizable": true,
+        "decorations": true,
+        "transparent": false,
+        "alwaysOnTop": false,
+        "skipTaskbar": false,
+        "theme": "system",
+        "webviewOptions": {
+          "autoZoom": false,
+          "dragDropEnabled": true
+        }
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data: https:; connect-src 'self' ws: wss: http: https: ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "category": "Utility",
+    "copyright": "© 2024 AI Disk Cleaner Team",
+    "deb": {
+      "depends": []
+    },
+    "externalBin": [],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "identifier": "com.aidiskcleaner.app",
+    "longDescription": "AI-powered disk cleaning application with modern web interface",
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [],
+    "shortDescription": "AI Disk Cleaner",
+    "targets": "all",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  },
+  "plugins": {
+    "shell": {
+      "open": true,
+      "scope": [
+        {
+          "name": "open-file-browser",
+          "cmd": "xdg-open",
+          "args": true,
+          "sidecar": false
+        }
+      ]
+    },
+    "dialog": {
+      "all": true,
+      "ask": true,
+      "confirm": true,
+      "message": true,
+      "open": true,
+      "save": true
+    },
+    "fs": {
+      "all": true,
+      "readFile": true,
+      "writeFile": true,
+      "readDir": true,
+      "copyFile": true,
+      "createDir": true,
+      "removeDir": true,
+      "removeFile": true,
+      "renameFile": true,
+      "exists": true,
+      "scope": ["**"]
+    },
+    "notification": {
+      "all": true
+    },
+    "os": {
+      "all": true
+    }
+  },
+  "permissions": [
+    "core:default",
+    "dialog:open",
+    "dialog:save",
+    "dialog:ask",
+    "dialog:confirm",
+    "dialog:message",
+    "fs:default",
+    "fs:read-file",
+    "fs:write-file",
+    "fs:read-dir",
+    "fs:copy-file",
+    "fs:create-dir",
+    "fs:remove-dir",
+    "fs:remove-file",
+    "fs:rename-file",
+    "fs:exists",
+    "notification:default",
+    "shell:open"
+  ]
+}

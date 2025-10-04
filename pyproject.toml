@@ -1,6 +1,6 @@
 [project]
 name = "ai-disk-cleanup"
-version = "0.1.0"
+version = "0.3.0"
 description = "Privacy-first AI-powered disk cleanup tool"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -19,6 +19,15 @@ test = [
     "pytest-mock>=3.10.0",
     "pytest-benchmark>=4.0.0"
 ]
+installer = [
+    "pyinstaller>=5.0.0",
+    "pyyaml>=6.0",
+    "nsis>=0.1.0"  # Windows installer support
+]
+
+[project.scripts]
+ai-disk-cleanup = "ai_disk_cleanup.cli:main"
+installer = "installer.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
