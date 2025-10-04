@@ -1,0 +1,5002 @@
+[
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_20.tmp",
+      "name": "important_20.tmp",
+      "size_bytes": 211777,
+      "extension": ".tmp",
+      "created_date": "2025-04-07T02:15:48.541681",
+      "modified_date": "2025-04-07T02:15:48.541681",
+      "accessed_date": "2025-04-07T02:15:48.541681",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_20.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/document_0.docx",
+      "name": "document_0.docx",
+      "size_bytes": 195354,
+      "extension": ".docx",
+      "created_date": "2025-04-10T02:15:48.542354",
+      "modified_date": "2025-04-10T02:15:48.542354",
+      "accessed_date": "2025-04-10T02:15:48.542354",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: document_0.docx in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/production_config_12.old",
+      "name": "production_config_12.old",
+      "size_bytes": 200038,
+      "extension": ".old",
+      "created_date": "2025-05-19T02:15:48.542240",
+      "modified_date": "2025-05-19T02:15:48.542240",
+      "accessed_date": "2025-05-19T02:15:48.542240",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: production_config_12.old (age: 2025-05-19T02:15:48.542240)"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/log/application_22.log",
+      "name": "application_22.log",
+      "size_bytes": 29731,
+      "extension": ".log",
+      "created_date": "2025-07-25T02:15:48.542154",
+      "modified_date": "2025-07-25T02:15:48.542154",
+      "accessed_date": "2025-07-25T02:15:48.542154",
+      "parent_directory": "/var/log",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Log file in /var/log: application_22.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_4.log",
+      "name": "transaction_4.log",
+      "size_bytes": 5261950,
+      "extension": ".log",
+      "created_date": "2025-07-24T02:15:48.542080",
+      "modified_date": "2025-07-24T02:15:48.542080",
+      "accessed_date": "2025-07-24T02:15:48.542080",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_4.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_error_19.log",
+      "name": "critical_error_19.log",
+      "size_bytes": 2733451,
+      "extension": ".log",
+      "created_date": "2025-07-10T02:15:48.542142",
+      "modified_date": "2025-07-10T02:15:48.542142",
+      "accessed_date": "2025-07-10T02:15:48.542142",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: critical_error_19.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_31.tmp",
+      "name": "important_31.tmp",
+      "size_bytes": 933405,
+      "extension": ".tmp",
+      "created_date": "2025-09-18T02:15:48.541751",
+      "modified_date": "2025-09-18T02:15:48.541751",
+      "accessed_date": "2025-09-18T02:15:48.541751",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_31.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_13.dat",
+      "name": "config_13.dat",
+      "size_bytes": 41219,
+      "extension": ".dat",
+      "created_date": "2025-03-08T02:15:48.542527",
+      "modified_date": "2025-03-08T02:15:48.542527",
+      "accessed_date": "2025-03-08T02:15:48.542527",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "unknown",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has ambiguous extension '.dat'"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_13.log",
+      "name": "security_audit_13.log",
+      "size_bytes": 7766389,
+      "extension": ".log",
+      "created_date": "2025-08-12T02:15:48.542118",
+      "modified_date": "2025-08-12T02:15:48.542118",
+      "accessed_date": "2025-08-12T02:15:48.542118",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_13.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_11.tmp",
+      "name": "important_11.tmp",
+      "size_bytes": 975003,
+      "extension": ".tmp",
+      "created_date": "2024-10-09T02:15:48.541620",
+      "modified_date": "2024-10-09T02:15:48.541620",
+      "accessed_date": "2024-10-09T02:15:48.541620",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_11.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_17.tmp",
+      "name": "important_17.tmp",
+      "size_bytes": 131096,
+      "extension": ".tmp",
+      "created_date": "2025-08-14T02:15:48.541661",
+      "modified_date": "2025-08-14T02:15:48.541661",
+      "accessed_date": "2025-08-14T02:15:48.541661",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_17.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_15.dat",
+      "name": "config_15.dat",
+      "size_bytes": 90522,
+      "extension": ".dat",
+      "created_date": "2025-09-30T02:15:48.542536",
+      "modified_date": "2025-09-30T02:15:48.542536",
+      "accessed_date": "2025-09-30T02:15:48.542536",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "unknown",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has ambiguous extension '.dat'"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_25.db",
+      "name": "config_storage_25.db",
+      "size_bytes": 292673,
+      "extension": ".db",
+      "created_date": "2025-09-20T02:15:48.542002",
+      "modified_date": "2025-09-20T02:15:48.542002",
+      "accessed_date": "2025-09-20T02:15:48.542002",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_25.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_32",
+      "name": "document_cache_32",
+      "size_bytes": 236089,
+      "extension": ".cache",
+      "created_date": "2025-09-21T02:15:48.542029",
+      "modified_date": "2025-09-21T02:15:48.542029",
+      "accessed_date": "2025-09-21T02:15:48.542029",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_32"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/document_17.docx",
+      "name": "document_17.docx",
+      "size_bytes": 77605,
+      "extension": ".docx",
+      "created_date": "2025-05-25T02:15:48.542423",
+      "modified_date": "2025-05-25T02:15:48.542423",
+      "accessed_date": "2025-05-25T02:15:48.542423",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: document_17.docx in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_27.log",
+      "name": "security_audit_27.log",
+      "size_bytes": 4169027,
+      "extension": ".log",
+      "created_date": "2025-07-10T02:15:48.542175",
+      "modified_date": "2025-07-10T02:15:48.542175",
+      "accessed_date": "2025-07-10T02:15:48.542175",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_27.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_1",
+      "name": "cache_temp_1",
+      "size_bytes": 25105,
+      "extension": "",
+      "created_date": "2025-08-09T02:15:48.541542",
+      "modified_date": "2025-08-09T02:15:48.541542",
+      "accessed_date": "2025-08-09T02:15:48.541542",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_1' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_4",
+      "name": "document_cache_4",
+      "size_bytes": 89293,
+      "extension": ".cache",
+      "created_date": "2025-09-13T02:15:48.541879",
+      "modified_date": "2025-09-13T02:15:48.541879",
+      "accessed_date": "2025-09-13T02:15:48.541879",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_4"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_7.cache",
+      "name": "user_data_7.cache",
+      "size_bytes": 419797,
+      "extension": ".cache",
+      "created_date": "2025-09-26T02:15:48.541898",
+      "modified_date": "2025-09-26T02:15:48.541898",
+      "accessed_date": "2025-09-26T02:15:48.541898",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_7.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/.hidden_temp_14.tmp",
+      "name": ".hidden_temp_14.tmp",
+      "size_bytes": 307,
+      "extension": ".tmp",
+      "created_date": "2025-09-04T02:15:48.542532",
+      "modified_date": "2025-09-04T02:15:48.542532",
+      "accessed_date": "2025-09-04T02:15:48.542532",
+      "parent_directory": "/tmp",
+      "is_hidden": true,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Hidden temporary file is safe to delete"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/notes_8.txt",
+      "name": "notes_8.txt",
+      "size_bytes": 5793,
+      "extension": ".txt",
+      "created_date": "2025-04-19T02:15:48.542388",
+      "modified_date": "2025-04-19T02:15:48.542388",
+      "accessed_date": "2025-04-19T02:15:48.542388",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: notes_8.txt in /tmp"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/backup_temp_30.tmp",
+      "name": "backup_temp_30.tmp",
+      "size_bytes": 99849,
+      "extension": ".tmp",
+      "created_date": "2024-10-17T02:15:48.541745",
+      "modified_date": "2024-10-17T02:15:48.541745",
+      "accessed_date": "2024-10-17T02:15:48.541745",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'backup_temp_30.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "C:\\Users\\User\\AppData\\Local\\Temp/browser_cache_8.dat",
+      "name": "browser_cache_8.dat",
+      "size_bytes": 4278,
+      "extension": ".dat",
+      "created_date": "2025-07-08T02:15:48.541904",
+      "modified_date": "2025-07-08T02:15:48.541904",
+      "accessed_date": "2025-07-08T02:15:48.541904",
+      "parent_directory": "C:\\Users\\User\\AppData\\Local\\Temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.85,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Cache file in cache directory: browser_cache_8.dat"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/temp_48.dat",
+      "name": "temp_48.dat",
+      "size_bytes": 12724,
+      "extension": ".dat",
+      "created_date": "2025-04-30T02:15:48.541844",
+      "modified_date": "2025-04-30T02:15:48.541844",
+      "accessed_date": "2025-04-30T02:15:48.541844",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'temp_48.dat' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/session_28",
+      "name": "session_28",
+      "size_bytes": 11592,
+      "extension": ".cache",
+      "created_date": "2025-07-18T02:15:48.542014",
+      "modified_date": "2025-07-18T02:15:48.542014",
+      "accessed_date": "2025-07-18T02:15:48.542014",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: session_28"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/tiny_6.tmp",
+      "name": "tiny_6.tmp",
+      "size_bytes": 93,
+      "extension": ".tmp",
+      "created_date": "2025-10-03T02:15:48.542469",
+      "modified_date": "2025-10-03T02:15:48.542469",
+      "accessed_date": "2025-10-03T02:15:48.542469",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Very small temporary file is safe to delete"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/storage_6.dat",
+      "name": "storage_6.dat",
+      "size_bytes": 13208,
+      "extension": ".dat",
+      "created_date": "2025-09-04T02:15:48.541890",
+      "modified_date": "2025-09-04T02:15:48.541890",
+      "accessed_date": "2025-09-04T02:15:48.541890",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: storage_6.dat"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/data_16.pdf",
+      "name": "data_16.pdf",
+      "size_bytes": 309484,
+      "extension": ".pdf",
+      "created_date": "2024-11-29T02:15:48.542420",
+      "modified_date": "2024-11-29T02:15:48.542420",
+      "accessed_date": "2024-11-29T02:15:48.542420",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: data_16.pdf in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_12.db",
+      "name": "config_storage_12.db",
+      "size_bytes": 188946,
+      "extension": ".db",
+      "created_date": "2025-08-05T02:15:48.541926",
+      "modified_date": "2025-08-05T02:15:48.541926",
+      "accessed_date": "2025-08-05T02:15:48.541926",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_12.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_34.tmp",
+      "name": "document_34.tmp",
+      "size_bytes": 911872,
+      "extension": ".tmp",
+      "created_date": "2025-01-18T02:15:48.541770",
+      "modified_date": "2025-01-18T02:15:48.541770",
+      "accessed_date": "2025-01-18T02:15:48.541770",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_34.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_42",
+      "name": "cache_temp_42",
+      "size_bytes": 90920,
+      "extension": "",
+      "created_date": "2025-09-28T02:15:48.541816",
+      "modified_date": "2025-09-28T02:15:48.541816",
+      "accessed_date": "2025-09-28T02:15:48.541816",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_42' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/production_config_8.old",
+      "name": "production_config_8.old",
+      "size_bytes": 2709060,
+      "extension": ".old",
+      "created_date": "2025-04-27T02:15:48.542223",
+      "modified_date": "2025-04-27T02:15:48.542223",
+      "accessed_date": "2025-04-27T02:15:48.542223",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: production_config_8.old (age: 2025-04-27T02:15:48.542223)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/custom_driver_15.sys",
+      "name": "custom_driver_15.sys",
+      "size_bytes": 1020481,
+      "extension": ".sys",
+      "created_date": "2024-12-04T02:15:48.542334",
+      "modified_date": "2024-12-04T02:15:48.542334",
+      "accessed_date": "2024-12-04T02:15:48.542334",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: custom_driver_15.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_5.db",
+      "name": "config_storage_5.db",
+      "size_bytes": 144643,
+      "extension": ".db",
+      "created_date": "2025-08-29T02:15:48.541884",
+      "modified_date": "2025-08-29T02:15:48.541884",
+      "accessed_date": "2025-08-29T02:15:48.541884",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_5.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/temp_0.dat",
+      "name": "temp_0.dat",
+      "size_bytes": 29188,
+      "extension": ".dat",
+      "created_date": "2025-09-29T02:15:48.541520",
+      "modified_date": "2025-09-29T02:15:48.541520",
+      "accessed_date": "2025-09-29T02:15:48.541520",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'temp_0.dat' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_35.cache",
+      "name": "user_data_35.cache",
+      "size_bytes": 243822,
+      "extension": ".cache",
+      "created_date": "2025-09-28T02:15:48.542040",
+      "modified_date": "2025-09-28T02:15:48.542040",
+      "accessed_date": "2025-09-28T02:15:48.542040",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_35.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_9.log",
+      "name": "transaction_9.log",
+      "size_bytes": 8323118,
+      "extension": ".log",
+      "created_date": "2025-07-25T02:15:48.542101",
+      "modified_date": "2025-07-25T02:15:48.542101",
+      "accessed_date": "2025-07-25T02:15:48.542101",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_9.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_18.log",
+      "name": "security_audit_18.log",
+      "size_bytes": 851277,
+      "extension": ".log",
+      "created_date": "2025-08-24T02:15:48.542138",
+      "modified_date": "2025-08-24T02:15:48.542138",
+      "accessed_date": "2025-08-24T02:15:48.542138",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_18.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_21.cache",
+      "name": "user_data_21.cache",
+      "size_bytes": 462468,
+      "extension": ".cache",
+      "created_date": "2025-07-15T02:15:48.541987",
+      "modified_date": "2025-07-15T02:15:48.541987",
+      "accessed_date": "2025-07-15T02:15:48.541987",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_21.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/файл_8.tmp",
+      "name": "файл_8.tmp",
+      "size_bytes": 937,
+      "extension": ".tmp",
+      "created_date": "2025-09-09T02:15:48.542479",
+      "modified_date": "2025-09-09T02:15:48.542479",
+      "accessed_date": "2025-09-09T02:15:48.542479",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has Unicode name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_17",
+      "name": "document_cache_17",
+      "size_bytes": 96023,
+      "extension": ".cache",
+      "created_date": "2025-08-06T02:15:48.541968",
+      "modified_date": "2025-08-06T02:15:48.541968",
+      "accessed_date": "2025-08-06T02:15:48.541968",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_17"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_7.temp",
+      "name": "config_7.temp",
+      "size_bytes": 831635,
+      "extension": ".temp",
+      "created_date": "2024-10-30T02:15:48.541590",
+      "modified_date": "2024-10-30T02:15:48.541590",
+      "accessed_date": "2024-10-30T02:15:48.541590",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_7.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_16.so",
+      "name": "patch_16.so",
+      "size_bytes": 4418720,
+      "extension": ".so",
+      "created_date": "2025-07-08T02:15:48.542337",
+      "modified_date": "2025-07-08T02:15:48.542337",
+      "accessed_date": "2025-07-08T02:15:48.542337",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_16.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/data_14.pdf",
+      "name": "data_14.pdf",
+      "size_bytes": 392818,
+      "extension": ".pdf",
+      "created_date": "2025-06-03T02:15:48.542412",
+      "modified_date": "2025-06-03T02:15:48.542412",
+      "accessed_date": "2025-06-03T02:15:48.542412",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: data_14.pdf in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_error_28.log",
+      "name": "critical_error_28.log",
+      "size_bytes": 632610,
+      "extension": ".log",
+      "created_date": "2025-07-28T02:15:48.542179",
+      "modified_date": "2025-07-28T02:15:48.542179",
+      "accessed_date": "2025-07-28T02:15:48.542179",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: critical_error_28.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/lib/session_14",
+      "name": "session_14",
+      "size_bytes": 97527,
+      "extension": ".cache",
+      "created_date": "2025-07-07T02:15:48.541935",
+      "modified_date": "2025-07-07T02:15:48.541935",
+      "accessed_date": "2025-07-07T02:15:48.541935",
+      "parent_directory": "/var/lib",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: session_14"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/logs/app.8.log.gz",
+      "name": "app.8.log.gz",
+      "size_bytes": 183279,
+      "extension": ".gz",
+      "created_date": "2025-09-11T02:15:48.542097",
+      "modified_date": "2025-09-11T02:15:48.542097",
+      "accessed_date": "2025-09-11T02:15:48.542097",
+      "parent_directory": "/home/user/.local/share/logs",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Log file in /home/user/.local/share/logs: app.8.log.gz"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/logs/app.12.log.gz",
+      "name": "app.12.log.gz",
+      "size_bytes": 808293,
+      "extension": ".gz",
+      "created_date": "2025-07-17T02:15:48.542114",
+      "modified_date": "2025-07-17T02:15:48.542114",
+      "accessed_date": "2025-07-17T02:15:48.542114",
+      "parent_directory": "/home/user/.local/share/logs",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Log file in /home/user/.local/share/logs: app.12.log.gz"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/future_18.tmp",
+      "name": "future_18.tmp",
+      "size_bytes": 562,
+      "extension": ".tmp",
+      "created_date": "2025-10-19T02:15:48.542547",
+      "modified_date": "2025-10-19T02:15:48.542547",
+      "accessed_date": "2025-09-18T02:15:48.542548",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "temporary",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has future timestamp, requires investigation"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_3.so",
+      "name": "patch_3.so",
+      "size_bytes": 2625557,
+      "extension": ".so",
+      "created_date": "2025-02-06T02:15:48.542286",
+      "modified_date": "2025-02-06T02:15:48.542286",
+      "accessed_date": "2025-02-06T02:15:48.542286",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_3.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_backup_10.bak",
+      "name": "critical_backup_10.bak",
+      "size_bytes": 2075423,
+      "extension": ".bak",
+      "created_date": "2024-10-24T02:15:48.542231",
+      "modified_date": "2024-10-24T02:15:48.542231",
+      "accessed_date": "2024-10-24T02:15:48.542231",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: critical_backup_10.bak (age: 2024-10-24T02:15:48.542231)"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/temp_43.dat",
+      "name": "temp_43.dat",
+      "size_bytes": 74494,
+      "extension": ".dat",
+      "created_date": "2024-11-17T02:15:48.541822",
+      "modified_date": "2024-11-17T02:15:48.541822",
+      "accessed_date": "2024-11-17T02:15:48.541822",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'temp_43.dat' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_0",
+      "name": "document_cache_0",
+      "size_bytes": 471758,
+      "extension": ".cache",
+      "created_date": "2025-07-31T02:15:48.541854",
+      "modified_date": "2025-07-31T02:15:48.541854",
+      "accessed_date": "2025-07-31T02:15:48.541854",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_0"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/lib/data_10.db",
+      "name": "data_10.db",
+      "size_bytes": 27911,
+      "extension": ".db",
+      "created_date": "2025-07-19T02:15:48.541916",
+      "modified_date": "2025-07-19T02:15:48.541916",
+      "accessed_date": "2025-07-19T02:15:48.541916",
+      "parent_directory": "/var/lib",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: data_10.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_45.tmp",
+      "name": "important_45.tmp",
+      "size_bytes": 423624,
+      "extension": ".tmp",
+      "created_date": "2025-09-08T02:15:48.541833",
+      "modified_date": "2025-09-08T02:15:48.541833",
+      "accessed_date": "2025-09-08T02:15:48.541833",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_45.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/etc/config.d/service_14.ini",
+      "name": "service_14.ini",
+      "size_bytes": 1805,
+      "extension": ".ini",
+      "created_date": "2025-08-15T02:15:48.542330",
+      "modified_date": "2025-08-15T02:15:48.542330",
+      "accessed_date": "2025-08-15T02:15:48.542330",
+      "parent_directory": "/etc/config.d",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "System file in /etc/config.d: service_14.ini"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/session_1",
+      "name": "session_1",
+      "size_bytes": 47332,
+      "extension": ".cache",
+      "created_date": "2025-07-15T02:15:48.541860",
+      "modified_date": "2025-07-15T02:15:48.541860",
+      "accessed_date": "2025-07-15T02:15:48.541860",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: session_1"
+  },
+  {
+    "file_metadata": {
+      "path": "C:\\Users\\User\\AppData\\Local\\Temp/app_cache_3.sqlite",
+      "name": "app_cache_3.sqlite",
+      "size_bytes": 4579,
+      "extension": ".sqlite",
+      "created_date": "2025-07-24T02:15:48.541873",
+      "modified_date": "2025-07-24T02:15:48.541873",
+      "accessed_date": "2025-07-24T02:15:48.541873",
+      "parent_directory": "C:\\Users\\User\\AppData\\Local\\Temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.85,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Cache file in cache directory: app_cache_3.sqlite"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/database_backup_17.backup",
+      "name": "database_backup_17.backup",
+      "size_bytes": 3399588,
+      "extension": ".backup",
+      "created_date": "2025-04-08T02:15:48.542259",
+      "modified_date": "2025-04-08T02:15:48.542259",
+      "accessed_date": "2025-04-08T02:15:48.542259",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: database_backup_17.backup (age: 2025-04-08T02:15:48.542259)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_2",
+      "name": "document_cache_2",
+      "size_bytes": 152636,
+      "extension": ".cache",
+      "created_date": "2025-07-29T02:15:48.541866",
+      "modified_date": "2025-07-29T02:15:48.541866",
+      "accessed_date": "2025-07-29T02:15:48.541866",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_2"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.cache/cache_19.cache",
+      "name": "cache_19.cache",
+      "size_bytes": 3957,
+      "extension": ".cache",
+      "created_date": "2025-08-23T02:15:48.541978",
+      "modified_date": "2025-08-23T02:15:48.541978",
+      "accessed_date": "2025-08-23T02:15:48.541978",
+      "parent_directory": "/home/user/.cache",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.85,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Cache file in cache directory: cache_19.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/draft_1.docx",
+      "name": "draft_1.docx",
+      "size_bytes": 84367,
+      "extension": ".docx",
+      "created_date": "2025-03-16T02:15:48.542359",
+      "modified_date": "2025-03-16T02:15:48.542359",
+      "accessed_date": "2025-03-16T02:15:48.542359",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: draft_1.docx in /tmp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_29.temp",
+      "name": "config_29.temp",
+      "size_bytes": 937916,
+      "extension": ".temp",
+      "created_date": "2024-10-13T02:15:48.541740",
+      "modified_date": "2024-10-13T02:15:48.541740",
+      "accessed_date": "2024-10-13T02:15:48.541740",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_29.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_25.temp",
+      "name": "config_25.temp",
+      "size_bytes": 863532,
+      "extension": ".temp",
+      "created_date": "2025-03-25T02:15:48.541713",
+      "modified_date": "2025-03-25T02:15:48.541713",
+      "accessed_date": "2025-03-25T02:15:48.541713",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_25.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_33.tmp",
+      "name": "important_33.tmp",
+      "size_bytes": 165964,
+      "extension": ".tmp",
+      "created_date": "2025-01-24T02:15:48.541764",
+      "modified_date": "2025-01-24T02:15:48.541764",
+      "accessed_date": "2025-01-24T02:15:48.541764",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_33.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_10.tmp",
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_10.tmp",
+      "size_bytes": 902,
+      "extension": ".tmp",
+      "created_date": "2025-09-17T02:15:48.542509",
+      "modified_date": "2025-09-17T02:15:48.542509",
+      "accessed_date": "2025-09-17T02:15:48.542509",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has extremely long name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/production_config_13.old",
+      "name": "production_config_13.old",
+      "size_bytes": 4079390,
+      "extension": ".old",
+      "created_date": "2025-03-06T02:15:48.542244",
+      "modified_date": "2025-03-06T02:15:48.542244",
+      "accessed_date": "2025-03-06T02:15:48.542244",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: production_config_13.old (age: 2025-03-06T02:15:48.542244)"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/temp_28.dat",
+      "name": "temp_28.dat",
+      "size_bytes": 92881,
+      "extension": ".dat",
+      "created_date": "2025-03-12T02:15:48.541732",
+      "modified_date": "2025-03-12T02:15:48.541732",
+      "accessed_date": "2025-03-12T02:15:48.541732",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'temp_28.dat' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_9.tmp",
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_9.tmp",
+      "size_bytes": 325,
+      "extension": ".tmp",
+      "created_date": "2025-09-28T02:15:48.542483",
+      "modified_date": "2025-09-28T02:15:48.542483",
+      "accessed_date": "2025-09-28T02:15:48.542483",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has extremely long name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_13.tmp",
+      "name": "document_13.tmp",
+      "size_bytes": 660432,
+      "extension": ".tmp",
+      "created_date": "2025-01-22T02:15:48.541635",
+      "modified_date": "2025-01-22T02:15:48.541635",
+      "accessed_date": "2025-01-22T02:15:48.541635",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_13.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/temp/draft_11.docx",
+      "name": "draft_11.docx",
+      "size_bytes": 87841,
+      "extension": ".docx",
+      "created_date": "2025-05-27T02:15:48.542400",
+      "modified_date": "2025-05-27T02:15:48.542400",
+      "accessed_date": "2025-05-27T02:15:48.542400",
+      "parent_directory": "/home/user/temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: draft_11.docx in /home/user/temp"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_49",
+      "name": "cache_temp_49",
+      "size_bytes": 68503,
+      "extension": "",
+      "created_date": "2025-01-19T02:15:48.541848",
+      "modified_date": "2025-01-19T02:15:48.541848",
+      "accessed_date": "2025-01-19T02:15:48.541848",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_49' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_6.temp",
+      "name": "config_6.temp",
+      "size_bytes": 387702,
+      "extension": ".temp",
+      "created_date": "2025-08-14T02:15:48.541583",
+      "modified_date": "2025-08-14T02:15:48.541583",
+      "accessed_date": "2025-08-14T02:15:48.541583",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_6.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/temp/notes_3.txt",
+      "name": "notes_3.txt",
+      "size_bytes": 59687,
+      "extension": ".txt",
+      "created_date": "2025-02-21T02:15:48.542368",
+      "modified_date": "2025-02-21T02:15:48.542368",
+      "accessed_date": "2025-02-21T02:15:48.542368",
+      "parent_directory": "/home/user/temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: notes_3.txt in /home/user/temp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_error_3.log",
+      "name": "critical_error_3.log",
+      "size_bytes": 1907616,
+      "extension": ".log",
+      "created_date": "2025-08-20T02:15:48.542076",
+      "modified_date": "2025-08-20T02:15:48.542076",
+      "accessed_date": "2025-08-20T02:15:48.542076",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: critical_error_3.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_14.tmp",
+      "name": "document_14.tmp",
+      "size_bytes": 450017,
+      "extension": ".tmp",
+      "created_date": "2025-07-30T02:15:48.541642",
+      "modified_date": "2025-07-30T02:15:48.541642",
+      "accessed_date": "2025-07-30T02:15:48.541642",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_14.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/database_backup_2.backup",
+      "name": "database_backup_2.backup",
+      "size_bytes": 4378464,
+      "extension": ".backup",
+      "created_date": "2025-07-23T02:15:48.542198",
+      "modified_date": "2025-07-23T02:15:48.542198",
+      "accessed_date": "2025-07-23T02:15:48.542198",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: database_backup_2.backup (age: 2025-07-23T02:15:48.542198)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_1.so",
+      "name": "patch_1.so",
+      "size_bytes": 3617945,
+      "extension": ".so",
+      "created_date": "2025-05-15T02:15:48.542277",
+      "modified_date": "2025-05-15T02:15:48.542277",
+      "accessed_date": "2025-05-15T02:15:48.542277",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_1.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/log/error_16.log",
+      "name": "error_16.log",
+      "size_bytes": 24522,
+      "extension": ".log",
+      "created_date": "2025-07-22T02:15:48.542130",
+      "modified_date": "2025-07-22T02:15:48.542130",
+      "accessed_date": "2025-07-22T02:15:48.542130",
+      "parent_directory": "/var/log",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Log file in /var/log: error_16.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_30.cache",
+      "name": "user_data_30.cache",
+      "size_bytes": 450908,
+      "extension": ".cache",
+      "created_date": "2025-07-17T02:15:48.542022",
+      "modified_date": "2025-07-17T02:15:48.542022",
+      "accessed_date": "2025-07-17T02:15:48.542022",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_30.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_7.log",
+      "name": "transaction_7.log",
+      "size_bytes": 7532082,
+      "extension": ".log",
+      "created_date": "2025-09-25T02:15:48.542093",
+      "modified_date": "2025-09-25T02:15:48.542093",
+      "accessed_date": "2025-09-25T02:15:48.542093",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_7.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/system_config_15.save",
+      "name": "system_config_15.save",
+      "size_bytes": 44911,
+      "extension": ".save",
+      "created_date": "2025-06-06T02:15:48.542251",
+      "modified_date": "2025-06-06T02:15:48.542251",
+      "accessed_date": "2025-06-06T02:15:48.542251",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: system_config_15.save (age: 2025-06-06T02:15:48.542251)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/temp/notes_6.txt",
+      "name": "notes_6.txt",
+      "size_bytes": 16791,
+      "extension": ".txt",
+      "created_date": "2025-08-10T02:15:48.542380",
+      "modified_date": "2025-08-10T02:15:48.542380",
+      "accessed_date": "2025-08-10T02:15:48.542380",
+      "parent_directory": "/home/user/temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: notes_6.txt in /home/user/temp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/storage_11.dat",
+      "name": "storage_11.dat",
+      "size_bytes": 88599,
+      "extension": ".dat",
+      "created_date": "2025-09-13T02:15:48.541921",
+      "modified_date": "2025-09-13T02:15:48.541921",
+      "accessed_date": "2025-09-13T02:15:48.541921",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: storage_11.dat"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_9.tmp",
+      "name": "document_9.tmp",
+      "size_bytes": 872711,
+      "extension": ".tmp",
+      "created_date": "2025-10-02T02:15:48.541603",
+      "modified_date": "2025-10-02T02:15:48.541603",
+      "accessed_date": "2025-10-02T02:15:48.541603",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_9.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_33.cache",
+      "name": "user_data_33.cache",
+      "size_bytes": 469696,
+      "extension": ".cache",
+      "created_date": "2025-08-08T02:15:48.542032",
+      "modified_date": "2025-08-08T02:15:48.542032",
+      "accessed_date": "2025-08-08T02:15:48.542032",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_33.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_13.db",
+      "name": "config_storage_13.db",
+      "size_bytes": 477922,
+      "extension": ".db",
+      "created_date": "2025-07-20T02:15:48.541930",
+      "modified_date": "2025-07-20T02:15:48.541930",
+      "accessed_date": "2025-07-20T02:15:48.541930",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_13.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_backup_1.bak",
+      "name": "critical_backup_1.bak",
+      "size_bytes": 7305407,
+      "extension": ".bak",
+      "created_date": "2024-12-20T02:15:48.542194",
+      "modified_date": "2024-12-20T02:15:48.542194",
+      "accessed_date": "2024-12-20T02:15:48.542194",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: critical_backup_1.bak (age: 2024-12-20T02:15:48.542194)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_14.log",
+      "name": "transaction_14.log",
+      "size_bytes": 1093903,
+      "extension": ".log",
+      "created_date": "2025-08-13T02:15:48.542122",
+      "modified_date": "2025-08-13T02:15:48.542122",
+      "accessed_date": "2025-08-13T02:15:48.542122",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_14.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/cache/browser_cache_16.dat",
+      "name": "browser_cache_16.dat",
+      "size_bytes": 42031,
+      "extension": ".dat",
+      "created_date": "2025-09-17T02:15:48.541962",
+      "modified_date": "2025-09-17T02:15:48.541962",
+      "accessed_date": "2025-09-17T02:15:48.541962",
+      "parent_directory": "/var/cache",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.85,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Cache file in cache directory: browser_cache_16.dat"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_39.tmp",
+      "name": "document_39.tmp",
+      "size_bytes": 692579,
+      "extension": ".tmp",
+      "created_date": "2025-01-14T02:15:48.541798",
+      "modified_date": "2025-01-14T02:15:48.541798",
+      "accessed_date": "2025-01-14T02:15:48.541798",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_39.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/logs/app.29.log.gz",
+      "name": "app.29.log.gz",
+      "size_bytes": 102355,
+      "extension": ".gz",
+      "created_date": "2025-08-20T02:15:48.542183",
+      "modified_date": "2025-08-20T02:15:48.542183",
+      "accessed_date": "2025-08-20T02:15:48.542183",
+      "parent_directory": "/home/user/.local/share/logs",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Log file in /home/user/.local/share/logs: app.29.log.gz"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_3.tmp",
+      "name": "document_3.tmp",
+      "size_bytes": 297496,
+      "extension": ".tmp",
+      "created_date": "2024-12-09T02:15:48.541560",
+      "modified_date": "2024-12-09T02:15:48.541560",
+      "accessed_date": "2024-12-09T02:15:48.541560",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_3.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_5.so",
+      "name": "patch_5.so",
+      "size_bytes": 199320,
+      "extension": ".so",
+      "created_date": "2025-08-02T02:15:48.542294",
+      "modified_date": "2025-08-02T02:15:48.542294",
+      "accessed_date": "2025-08-02T02:15:48.542294",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_5.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_24.tmp",
+      "name": "document_24.tmp",
+      "size_bytes": 220461,
+      "extension": ".tmp",
+      "created_date": "2025-07-08T02:15:48.541707",
+      "modified_date": "2025-07-08T02:15:48.541707",
+      "accessed_date": "2025-07-08T02:15:48.541707",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_24.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_36",
+      "name": "cache_temp_36",
+      "size_bytes": 99190,
+      "extension": "",
+      "created_date": "2025-08-12T02:15:48.541780",
+      "modified_date": "2025-08-12T02:15:48.541780",
+      "accessed_date": "2025-08-12T02:15:48.541780",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_36' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_2.so",
+      "name": "patch_2.so",
+      "size_bytes": 176858,
+      "extension": ".so",
+      "created_date": "2025-01-01T02:15:48.542282",
+      "modified_date": "2025-01-01T02:15:48.542282",
+      "accessed_date": "2025-01-01T02:15:48.542282",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_2.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/logs/debug_17.trace",
+      "name": "debug_17.trace",
+      "size_bytes": 549054,
+      "extension": ".trace",
+      "created_date": "2025-08-27T02:15:48.542134",
+      "modified_date": "2025-08-27T02:15:48.542134",
+      "accessed_date": "2025-08-27T02:15:48.542134",
+      "parent_directory": "/home/user/.local/share/logs",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Log file in /home/user/.local/share/logs: debug_17.trace"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/production_config_3.old",
+      "name": "production_config_3.old",
+      "size_bytes": 2026800,
+      "extension": ".old",
+      "created_date": "2025-06-15T02:15:48.542202",
+      "modified_date": "2025-06-15T02:15:48.542202",
+      "accessed_date": "2025-06-15T02:15:48.542202",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: production_config_3.old (age: 2025-06-15T02:15:48.542202)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_29",
+      "name": "document_cache_29",
+      "size_bytes": 122625,
+      "extension": ".cache",
+      "created_date": "2025-09-19T02:15:48.542018",
+      "modified_date": "2025-09-19T02:15:48.542018",
+      "accessed_date": "2025-09-19T02:15:48.542018",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_29"
+  },
+  {
+    "file_metadata": {
+      "path": "/etc/config.d/system_7.cfg",
+      "name": "system_7.cfg",
+      "size_bytes": 1357,
+      "extension": ".cfg",
+      "created_date": "2024-12-04T02:15:48.542302",
+      "modified_date": "2024-12-04T02:15:48.542302",
+      "accessed_date": "2024-12-04T02:15:48.542302",
+      "parent_directory": "/etc/config.d",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "System file in /etc/config.d: system_7.cfg"
+  },
+  {
+    "file_metadata": {
+      "path": "/Windows/System32/kernel_18.sys",
+      "name": "kernel_18.sys",
+      "size_bytes": 4227005,
+      "extension": ".sys",
+      "created_date": "2025-04-16T02:15:48.542345",
+      "modified_date": "2025-04-16T02:15:48.542345",
+      "accessed_date": "2025-04-16T02:15:48.542345",
+      "parent_directory": "/Windows/System32",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.95,
+      0.99
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "System file in /Windows/System32: kernel_18.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_8.tmp",
+      "name": "important_8.tmp",
+      "size_bytes": 840722,
+      "extension": ".tmp",
+      "created_date": "2025-03-01T02:15:48.541596",
+      "modified_date": "2025-03-01T02:15:48.541596",
+      "accessed_date": "2025-03-01T02:15:48.541596",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_8.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_22.temp",
+      "name": "config_22.temp",
+      "size_bytes": 261422,
+      "extension": ".temp",
+      "created_date": "2025-08-31T02:15:48.541695",
+      "modified_date": "2025-08-31T02:15:48.541695",
+      "accessed_date": "2025-08-31T02:15:48.541695",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_22.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/System/Library/kernel_13.sys",
+      "name": "kernel_13.sys",
+      "size_bytes": 7581350,
+      "extension": ".sys",
+      "created_date": "2024-10-26T02:15:48.542326",
+      "modified_date": "2024-10-26T02:15:48.542326",
+      "accessed_date": "2024-10-26T02:15:48.542326",
+      "parent_directory": "/System/Library",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.95,
+      0.99
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "System file in /System/Library: kernel_13.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/temp/notes_2.txt",
+      "name": "notes_2.txt",
+      "size_bytes": 26336,
+      "extension": ".txt",
+      "created_date": "2024-12-19T02:15:48.542363",
+      "modified_date": "2024-12-19T02:15:48.542363",
+      "accessed_date": "2024-12-19T02:15:48.542363",
+      "parent_directory": "/home/user/temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: notes_2.txt in /home/user/temp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_20.db",
+      "name": "config_storage_20.db",
+      "size_bytes": 255492,
+      "extension": ".db",
+      "created_date": "2025-08-11T02:15:48.541983",
+      "modified_date": "2025-08-11T02:15:48.541983",
+      "accessed_date": "2025-08-11T02:15:48.541983",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_20.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/custom_driver_9.sys",
+      "name": "custom_driver_9.sys",
+      "size_bytes": 3992925,
+      "extension": ".sys",
+      "created_date": "2024-12-21T02:15:48.542310",
+      "modified_date": "2024-12-21T02:15:48.542310",
+      "accessed_date": "2024-12-21T02:15:48.542310",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: custom_driver_9.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_21.tmp",
+      "name": "document_21.tmp",
+      "size_bytes": 615196,
+      "extension": ".tmp",
+      "created_date": "2024-12-21T02:15:48.541688",
+      "modified_date": "2024-12-21T02:15:48.541688",
+      "accessed_date": "2024-12-21T02:15:48.541688",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_21.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/custom_driver_12.sys",
+      "name": "custom_driver_12.sys",
+      "size_bytes": 3898772,
+      "extension": ".sys",
+      "created_date": "2024-12-26T02:15:48.542322",
+      "modified_date": "2024-12-26T02:15:48.542322",
+      "accessed_date": "2024-12-26T02:15:48.542322",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: custom_driver_12.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_5.log",
+      "name": "transaction_5.log",
+      "size_bytes": 4865940,
+      "extension": ".log",
+      "created_date": "2025-09-07T02:15:48.542084",
+      "modified_date": "2025-09-07T02:15:48.542084",
+      "accessed_date": "2025-09-07T02:15:48.542084",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_5.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/a/b/c/d/e/f/g/h/i/j/nested_0.tmp",
+      "name": "nested_0.tmp",
+      "size_bytes": 744,
+      "extension": ".tmp",
+      "created_date": "2025-09-15T02:15:48.542437",
+      "modified_date": "2025-09-15T02:15:48.542437",
+      "accessed_date": "2025-09-15T02:15:48.542437",
+      "parent_directory": "/tmp/a/b/c/d/e/f/g/h/i/j",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.9,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File in deeply nested temporary directory structure"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_3.tmp",
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_3.tmp",
+      "size_bytes": 490,
+      "extension": ".tmp",
+      "created_date": "2025-09-19T02:15:48.542450",
+      "modified_date": "2025-09-19T02:15:48.542450",
+      "accessed_date": "2025-09-19T02:15:48.542450",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has extremely long name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_17.so",
+      "name": "patch_17.so",
+      "size_bytes": 4246370,
+      "extension": ".so",
+      "created_date": "2025-03-16T02:15:48.542341",
+      "modified_date": "2025-03-16T02:15:48.542341",
+      "accessed_date": "2025-03-16T02:15:48.542341",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_17.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/.hidden_temp_4.tmp",
+      "name": ".hidden_temp_4.tmp",
+      "size_bytes": 226,
+      "extension": ".tmp",
+      "created_date": "2025-09-04T02:15:48.542453",
+      "modified_date": "2025-09-04T02:15:48.542453",
+      "accessed_date": "2025-09-04T02:15:48.542453",
+      "parent_directory": "/tmp",
+      "is_hidden": true,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Hidden temporary file is safe to delete"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/lib/data_9.db",
+      "name": "data_9.db",
+      "size_bytes": 49658,
+      "extension": ".db",
+      "created_date": "2025-07-28T02:15:48.541911",
+      "modified_date": "2025-07-28T02:15:48.541911",
+      "accessed_date": "2025-07-28T02:15:48.541911",
+      "parent_directory": "/var/lib",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: data_9.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_11.log",
+      "name": "transaction_11.log",
+      "size_bytes": 7553427,
+      "extension": ".log",
+      "created_date": "2025-07-18T02:15:48.542110",
+      "modified_date": "2025-07-18T02:15:48.542110",
+      "accessed_date": "2025-07-18T02:15:48.542110",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_11.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/a/b/c/d/e/f/g/h/i/j/nested_17.tmp",
+      "name": "nested_17.tmp",
+      "size_bytes": 480,
+      "extension": ".tmp",
+      "created_date": "2025-09-08T02:15:48.542543",
+      "modified_date": "2025-09-08T02:15:48.542543",
+      "accessed_date": "2025-09-08T02:15:48.542543",
+      "parent_directory": "/tmp/a/b/c/d/e/f/g/h/i/j",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.9,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File in deeply nested temporary directory structure"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/data_26.db",
+      "name": "data_26.db",
+      "size_bytes": 44735,
+      "extension": ".db",
+      "created_date": "2025-09-24T02:15:48.542007",
+      "modified_date": "2025-09-24T02:15:48.542007",
+      "accessed_date": "2025-09-24T02:15:48.542007",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: data_26.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/lib/session_22",
+      "name": "session_22",
+      "size_bytes": 21861,
+      "extension": ".cache",
+      "created_date": "2025-09-09T02:15:48.541991",
+      "modified_date": "2025-09-09T02:15:48.541991",
+      "accessed_date": "2025-09-09T02:15:48.541991",
+      "parent_directory": "/var/lib",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: session_22"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/large_file_19.tmp",
+      "name": "large_file_19.tmp",
+      "size_bytes": 2816323085,
+      "extension": ".tmp",
+      "created_date": "2025-09-14T02:15:48.542553",
+      "modified_date": "2025-09-14T02:15:48.542553",
+      "accessed_date": "2025-09-14T02:15:48.542553",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "temporary",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_confirmation",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Very large file requires manual review despite being temporary"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_21.log",
+      "name": "transaction_21.log",
+      "size_bytes": 4276886,
+      "extension": ".log",
+      "created_date": "2025-09-07T02:15:48.542150",
+      "modified_date": "2025-09-07T02:15:48.542150",
+      "accessed_date": "2025-09-07T02:15:48.542150",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_21.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/tiny_12.tmp",
+      "name": "tiny_12.tmp",
+      "size_bytes": 60,
+      "extension": ".tmp",
+      "created_date": "2025-09-25T02:15:48.542520",
+      "modified_date": "2025-09-25T02:15:48.542520",
+      "accessed_date": "2025-09-25T02:15:48.542520",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Very small temporary file is safe to delete"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/файл_2.tmp",
+      "name": "файл_2.tmp",
+      "size_bytes": 372,
+      "extension": ".tmp",
+      "created_date": "2025-10-01T02:15:48.542446",
+      "modified_date": "2025-10-01T02:15:48.542446",
+      "accessed_date": "2025-10-01T02:15:48.542446",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has Unicode name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/tiny_5.tmp",
+      "name": "tiny_5.tmp",
+      "size_bytes": 8,
+      "extension": ".tmp",
+      "created_date": "2025-09-05T02:15:48.542463",
+      "modified_date": "2025-09-05T02:15:48.542463",
+      "accessed_date": "2025-09-05T02:15:48.542463",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Very small temporary file is safe to delete"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_2.tmp",
+      "name": "document_2.tmp",
+      "size_bytes": 149646,
+      "extension": ".tmp",
+      "created_date": "2025-04-06T02:15:48.541552",
+      "modified_date": "2025-04-06T02:15:48.541552",
+      "accessed_date": "2025-04-06T02:15:48.541552",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_2.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_1",
+      "name": "document_1",
+      "size_bytes": 49777,
+      "extension": "",
+      "created_date": "2025-08-31T02:15:48.542441",
+      "modified_date": "2025-08-31T02:15:48.542441",
+      "accessed_date": "2025-08-31T02:15:48.542441",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "unknown",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has no extension, requires manual review"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/cache/app_cache_38.sqlite",
+      "name": "app_cache_38.sqlite",
+      "size_bytes": 44527,
+      "extension": ".sqlite",
+      "created_date": "2025-07-18T02:15:48.542052",
+      "modified_date": "2025-07-18T02:15:48.542052",
+      "accessed_date": "2025-07-18T02:15:48.542052",
+      "parent_directory": "/var/cache",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.85,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Cache file in cache directory: app_cache_38.sqlite"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/data_19.pdf",
+      "name": "data_19.pdf",
+      "size_bytes": 361936,
+      "extension": ".pdf",
+      "created_date": "2025-05-22T02:15:48.542431",
+      "modified_date": "2025-05-22T02:15:48.542431",
+      "accessed_date": "2025-05-22T02:15:48.542431",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: data_19.pdf in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_34.cache",
+      "name": "user_data_34.cache",
+      "size_bytes": 477489,
+      "extension": ".cache",
+      "created_date": "2025-08-12T02:15:48.542036",
+      "modified_date": "2025-08-12T02:15:48.542036",
+      "accessed_date": "2025-08-12T02:15:48.542036",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_34.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/document_7.docx",
+      "name": "document_7.docx",
+      "size_bytes": 108067,
+      "extension": ".docx",
+      "created_date": "2025-02-16T02:15:48.542384",
+      "modified_date": "2025-02-16T02:15:48.542384",
+      "accessed_date": "2025-02-16T02:15:48.542384",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: document_7.docx in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_35.temp",
+      "name": "config_35.temp",
+      "size_bytes": 404280,
+      "extension": ".temp",
+      "created_date": "2024-12-14T02:15:48.541775",
+      "modified_date": "2024-12-14T02:15:48.541775",
+      "accessed_date": "2024-12-14T02:15:48.541775",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_35.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_19",
+      "name": "cache_temp_19",
+      "size_bytes": 68584,
+      "extension": "",
+      "created_date": "2025-08-28T02:15:48.541673",
+      "modified_date": "2025-08-28T02:15:48.541673",
+      "accessed_date": "2025-08-28T02:15:48.541673",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_19' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_error_20.log",
+      "name": "critical_error_20.log",
+      "size_bytes": 3793244,
+      "extension": ".log",
+      "created_date": "2025-09-12T02:15:48.542146",
+      "modified_date": "2025-09-12T02:15:48.542146",
+      "accessed_date": "2025-09-12T02:15:48.542146",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: critical_error_20.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/file_18.txt",
+      "name": "file_18.txt",
+      "size_bytes": 152082,
+      "extension": ".txt",
+      "created_date": "2025-02-05T02:15:48.542427",
+      "modified_date": "2025-02-05T02:15:48.542427",
+      "accessed_date": "2025-02-05T02:15:48.542427",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: file_18.txt in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/temp_12.dat",
+      "name": "temp_12.dat",
+      "size_bytes": 40009,
+      "extension": ".dat",
+      "created_date": "2024-11-19T02:15:48.541627",
+      "modified_date": "2024-11-19T02:15:48.541627",
+      "accessed_date": "2024-11-19T02:15:48.541627",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'temp_12.dat' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/backup_temp_23.tmp",
+      "name": "backup_temp_23.tmp",
+      "size_bytes": 75244,
+      "extension": ".tmp",
+      "created_date": "2025-03-16T02:15:48.541701",
+      "modified_date": "2025-03-16T02:15:48.541701",
+      "accessed_date": "2025-03-16T02:15:48.541701",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'backup_temp_23.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_4.tmp",
+      "name": "important_4.tmp",
+      "size_bytes": 372712,
+      "extension": ".tmp",
+      "created_date": "2025-01-03T02:15:48.541569",
+      "modified_date": "2025-01-03T02:15:48.541569",
+      "accessed_date": "2025-01-03T02:15:48.541569",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_4.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_7",
+      "name": "document_7",
+      "size_bytes": 41739,
+      "extension": "",
+      "created_date": "2025-03-23T02:15:48.542474",
+      "modified_date": "2025-03-23T02:15:48.542474",
+      "accessed_date": "2025-03-23T02:15:48.542474",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "unknown",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has no extension, requires manual review"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_15.temp",
+      "name": "config_15.temp",
+      "size_bytes": 187837,
+      "extension": ".temp",
+      "created_date": "2024-11-11T02:15:48.541648",
+      "modified_date": "2024-11-11T02:15:48.541648",
+      "accessed_date": "2024-11-11T02:15:48.541648",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'config_15.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_10.tmp",
+      "name": "document_10.tmp",
+      "size_bytes": 159678,
+      "extension": ".tmp",
+      "created_date": "2025-07-27T02:15:48.541612",
+      "modified_date": "2025-07-27T02:15:48.541612",
+      "accessed_date": "2025-07-27T02:15:48.541612",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_10.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/database_backup_18.backup",
+      "name": "database_backup_18.backup",
+      "size_bytes": 1930055,
+      "extension": ".backup",
+      "created_date": "2025-07-18T02:15:48.542263",
+      "modified_date": "2025-07-18T02:15:48.542263",
+      "accessed_date": "2025-07-18T02:15:48.542263",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: database_backup_18.backup (age: 2025-07-18T02:15:48.542263)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/file_13.txt",
+      "name": "file_13.txt",
+      "size_bytes": 266392,
+      "extension": ".txt",
+      "created_date": "2024-10-06T02:15:48.542408",
+      "modified_date": "2024-10-06T02:15:48.542408",
+      "accessed_date": "2024-10-06T02:15:48.542408",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: file_13.txt in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_backup_16.old",
+      "name": "config_backup_16.old",
+      "size_bytes": 89326,
+      "extension": ".old",
+      "created_date": "2025-06-10T02:15:48.542255",
+      "modified_date": "2025-06-10T02:15:48.542255",
+      "accessed_date": "2025-06-10T02:15:48.542255",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: config_backup_16.old (age: 2025-06-10T02:15:48.542255)"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/backup_temp_47.tmp",
+      "name": "backup_temp_47.tmp",
+      "size_bytes": 12771,
+      "extension": ".tmp",
+      "created_date": "2025-05-02T02:15:48.541841",
+      "modified_date": "2025-05-02T02:15:48.541841",
+      "accessed_date": "2025-05-02T02:15:48.541841",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'backup_temp_47.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_23.cache",
+      "name": "user_data_23.cache",
+      "size_bytes": 405764,
+      "extension": ".cache",
+      "created_date": "2025-07-31T02:15:48.541995",
+      "modified_date": "2025-07-31T02:15:48.541995",
+      "accessed_date": "2025-07-31T02:15:48.541995",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_23.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/data_15.pdf",
+      "name": "data_15.pdf",
+      "size_bytes": 201010,
+      "extension": ".pdf",
+      "created_date": "2025-09-02T02:15:48.542416",
+      "modified_date": "2025-09-02T02:15:48.542416",
+      "accessed_date": "2025-09-02T02:15:48.542416",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: data_15.pdf in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_1.log",
+      "name": "transaction_1.log",
+      "size_bytes": 1143871,
+      "extension": ".log",
+      "created_date": "2025-09-08T02:15:48.542067",
+      "modified_date": "2025-09-08T02:15:48.542067",
+      "accessed_date": "2025-09-08T02:15:48.542067",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_1.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_backup_5.old",
+      "name": "config_backup_5.old",
+      "size_bytes": 35184,
+      "extension": ".old",
+      "created_date": "2025-01-16T02:15:48.542211",
+      "modified_date": "2025-01-16T02:15:48.542211",
+      "accessed_date": "2025-01-16T02:15:48.542211",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: config_backup_5.old (age: 2025-01-16T02:15:48.542211)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_31",
+      "name": "document_cache_31",
+      "size_bytes": 333552,
+      "extension": ".cache",
+      "created_date": "2025-08-08T02:15:48.542025",
+      "modified_date": "2025-08-08T02:15:48.542025",
+      "accessed_date": "2025-08-08T02:15:48.542025",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_31"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/custom_driver_8.sys",
+      "name": "custom_driver_8.sys",
+      "size_bytes": 222856,
+      "extension": ".sys",
+      "created_date": "2025-02-10T02:15:48.542306",
+      "modified_date": "2025-02-10T02:15:48.542306",
+      "accessed_date": "2025-02-10T02:15:48.542306",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: custom_driver_8.sys"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_37.tmp",
+      "name": "important_37.tmp",
+      "size_bytes": 268840,
+      "extension": ".tmp",
+      "created_date": "2025-07-09T02:15:48.541785",
+      "modified_date": "2025-07-09T02:15:48.541785",
+      "accessed_date": "2025-07-09T02:15:48.541785",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_37.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/database_backup_6.backup",
+      "name": "database_backup_6.backup",
+      "size_bytes": 7349444,
+      "extension": ".backup",
+      "created_date": "2025-07-06T02:15:48.542215",
+      "modified_date": "2025-07-06T02:15:48.542215",
+      "accessed_date": "2025-07-06T02:15:48.542215",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: database_backup_6.backup (age: 2025-07-06T02:15:48.542215)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_25.log",
+      "name": "transaction_25.log",
+      "size_bytes": 8561396,
+      "extension": ".log",
+      "created_date": "2025-07-31T02:15:48.542167",
+      "modified_date": "2025-07-31T02:15:48.542167",
+      "accessed_date": "2025-07-31T02:15:48.542167",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_25.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_16",
+      "name": "cache_temp_16",
+      "size_bytes": 15203,
+      "extension": "",
+      "created_date": "2025-09-21T02:15:48.541654",
+      "modified_date": "2025-09-21T02:15:48.541654",
+      "accessed_date": "2025-09-21T02:15:48.541654",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_16' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/database_backup_14.backup",
+      "name": "database_backup_14.backup",
+      "size_bytes": 2680400,
+      "extension": ".backup",
+      "created_date": "2025-01-30T02:15:48.542248",
+      "modified_date": "2025-01-30T02:15:48.542248",
+      "accessed_date": "2025-01-30T02:15:48.542248",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: database_backup_14.backup (age: 2025-01-30T02:15:48.542248)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_0.so",
+      "name": "patch_0.so",
+      "size_bytes": 3644481,
+      "extension": ".so",
+      "created_date": "2024-12-04T02:15:48.542272",
+      "modified_date": "2024-12-04T02:15:48.542272",
+      "accessed_date": "2024-12-04T02:15:48.542272",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_0.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/log/system_15.out",
+      "name": "system_15.out",
+      "size_bytes": 58642,
+      "extension": ".out",
+      "created_date": "2025-07-18T02:15:48.542126",
+      "modified_date": "2025-07-18T02:15:48.542126",
+      "accessed_date": "2025-07-18T02:15:48.542126",
+      "parent_directory": "/var/log",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Log file in /var/log: system_15.out"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/temporary_file_38.temp",
+      "name": "temporary_file_38.temp",
+      "size_bytes": 6279,
+      "extension": ".temp",
+      "created_date": "2024-12-09T02:15:48.541792",
+      "modified_date": "2024-12-09T02:15:48.541792",
+      "accessed_date": "2024-12-09T02:15:48.541792",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.9,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "File matches temporary pattern 'temporary_file_38.temp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_doc_20240101_11.bak",
+      "name": "important_doc_20240101_11.bak",
+      "size_bytes": 53238,
+      "extension": ".bak",
+      "created_date": "2025-04-09T02:15:48.542235",
+      "modified_date": "2025-04-09T02:15:48.542235",
+      "accessed_date": "2025-04-09T02:15:48.542235",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: important_doc_20240101_11.bak (age: 2025-04-09T02:15:48.542235)"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/a/b/c/d/e/f/g/h/i/j/nested_16.tmp",
+      "name": "nested_16.tmp",
+      "size_bytes": 138,
+      "extension": ".tmp",
+      "created_date": "2025-09-19T02:15:48.542540",
+      "modified_date": "2025-09-19T02:15:48.542540",
+      "accessed_date": "2025-09-19T02:15:48.542540",
+      "parent_directory": "/tmp/a/b/c/d/e/f/g/h/i/j",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.9,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File in deeply nested temporary directory structure"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_24",
+      "name": "document_cache_24",
+      "size_bytes": 456512,
+      "extension": ".cache",
+      "created_date": "2025-08-06T02:15:48.541999",
+      "modified_date": "2025-08-06T02:15:48.541999",
+      "accessed_date": "2025-08-06T02:15:48.541999",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_24"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/.local/share/session_39",
+      "name": "session_39",
+      "size_bytes": 10611,
+      "extension": ".cache",
+      "created_date": "2025-08-10T02:15:48.542056",
+      "modified_date": "2025-08-10T02:15:48.542056",
+      "accessed_date": "2025-08-10T02:15:48.542056",
+      "parent_directory": "/home/user/.local/share",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: session_39"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_27.tmp",
+      "name": "document_27.tmp",
+      "size_bytes": 354267,
+      "extension": ".tmp",
+      "created_date": "2024-11-01T02:15:48.541725",
+      "modified_date": "2024-11-01T02:15:48.541725",
+      "accessed_date": "2024-11-01T02:15:48.541725",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_27.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/log/system_2.out",
+      "name": "system_2.out",
+      "size_bytes": 99225,
+      "extension": ".out",
+      "created_date": "2025-07-30T02:15:48.542072",
+      "modified_date": "2025-07-30T02:15:48.542072",
+      "accessed_date": "2025-07-30T02:15:48.542072",
+      "parent_directory": "/var/log",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.8,
+      0.9
+    ],
+    "protection_level": "safe",
+    "test_scenario": "log_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "Log file in /var/log: system_2.out"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_0.log",
+      "name": "security_audit_0.log",
+      "size_bytes": 7900147,
+      "extension": ".log",
+      "created_date": "2025-08-24T02:15:48.542062",
+      "modified_date": "2025-08-24T02:15:48.542062",
+      "accessed_date": "2025-08-24T02:15:48.542062",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_0.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_doc_20240101_19.bak",
+      "name": "important_doc_20240101_19.bak",
+      "size_bytes": 79613,
+      "extension": ".bak",
+      "created_date": "2025-02-20T02:15:48.542267",
+      "modified_date": "2025-02-20T02:15:48.542267",
+      "accessed_date": "2025-02-20T02:15:48.542267",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: important_doc_20240101_19.bak (age: 2025-02-20T02:15:48.542267)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/system_config_4.save",
+      "name": "system_config_4.save",
+      "size_bytes": 11447,
+      "extension": ".save",
+      "created_date": "2024-12-29T02:15:48.542206",
+      "modified_date": "2024-12-29T02:15:48.542206",
+      "accessed_date": "2024-12-29T02:15:48.542206",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: system_config_4.save (age: 2024-12-29T02:15:48.542206)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_26.log",
+      "name": "security_audit_26.log",
+      "size_bytes": 921251,
+      "extension": ".log",
+      "created_date": "2025-08-12T02:15:48.542171",
+      "modified_date": "2025-08-12T02:15:48.542171",
+      "accessed_date": "2025-08-12T02:15:48.542171",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_26.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/tmp/cache_temp_32",
+      "name": "cache_temp_32",
+      "size_bytes": 83016,
+      "extension": "",
+      "created_date": "2025-03-15T02:15:48.541757",
+      "modified_date": "2025-03-15T02:15:48.541757",
+      "accessed_date": "2025-03-15T02:15:48.541757",
+      "parent_directory": "/var/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.7,
+      0.85
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "File matches temporary pattern 'cache_temp_32' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/var/lib/data_18.db",
+      "name": "data_18.db",
+      "size_bytes": 83472,
+      "extension": ".db",
+      "created_date": "2025-07-20T02:15:48.541973",
+      "modified_date": "2025-07-20T02:15:48.541973",
+      "accessed_date": "2025-07-20T02:15:48.541973",
+      "parent_directory": "/var/lib",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Cache file in cache directory: data_18.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_error_10.log",
+      "name": "critical_error_10.log",
+      "size_bytes": 5418154,
+      "extension": ".log",
+      "created_date": "2025-07-06T02:15:48.542106",
+      "modified_date": "2025-07-06T02:15:48.542106",
+      "accessed_date": "2025-07-06T02:15:48.542106",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: critical_error_10.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/etc/service_10.ini",
+      "name": "service_10.ini",
+      "size_bytes": 63173,
+      "extension": ".ini",
+      "created_date": "2025-06-24T02:15:48.542314",
+      "modified_date": "2025-06-24T02:15:48.542314",
+      "accessed_date": "2025-06-24T02:15:48.542314",
+      "parent_directory": "/etc",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "System file in /etc: service_10.ini"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_40.tmp",
+      "name": "important_40.tmp",
+      "size_bytes": 879071,
+      "extension": ".tmp",
+      "created_date": "2025-09-19T02:15:48.541804",
+      "modified_date": "2025-09-19T02:15:48.541804",
+      "accessed_date": "2025-09-19T02:15:48.541804",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_40.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/production_config_9.old",
+      "name": "production_config_9.old",
+      "size_bytes": 902230,
+      "extension": ".old",
+      "created_date": "2025-07-08T02:15:48.542227",
+      "modified_date": "2025-07-08T02:15:48.542227",
+      "accessed_date": "2025-07-08T02:15:48.542227",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: production_config_9.old (age: 2025-07-08T02:15:48.542227)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_41.tmp",
+      "name": "document_41.tmp",
+      "size_bytes": 481881,
+      "extension": ".tmp",
+      "created_date": "2025-06-03T02:15:48.541810",
+      "modified_date": "2025-06-03T02:15:48.541810",
+      "accessed_date": "2025-06-03T02:15:48.541810",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_41.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_11.tmp",
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_11.tmp",
+      "size_bytes": 669,
+      "extension": ".tmp",
+      "created_date": "2025-09-07T02:15:48.542515",
+      "modified_date": "2025-09-07T02:15:48.542515",
+      "accessed_date": "2025-09-07T02:15:48.542515",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "safe",
+    "test_scenario": "edge_cases",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File has extremely long name but is in temp directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/draft_12.docx",
+      "name": "draft_12.docx",
+      "size_bytes": 38786,
+      "extension": ".docx",
+      "created_date": "2025-02-25T02:15:48.542405",
+      "modified_date": "2025-02-25T02:15:48.542405",
+      "accessed_date": "2025-02-25T02:15:48.542405",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: draft_12.docx in /tmp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_46.tmp",
+      "name": "important_46.tmp",
+      "size_bytes": 861711,
+      "extension": ".tmp",
+      "created_date": "2025-08-08T02:15:48.541837",
+      "modified_date": "2025-08-08T02:15:48.541837",
+      "accessed_date": "2025-08-08T02:15:48.541837",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_46.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/notes_10.txt",
+      "name": "notes_10.txt",
+      "size_bytes": 9423,
+      "extension": ".txt",
+      "created_date": "2024-11-14T02:15:48.542396",
+      "modified_date": "2024-11-14T02:15:48.542396",
+      "accessed_date": "2024-11-14T02:15:48.542396",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: notes_10.txt in /tmp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_15.cache",
+      "name": "user_data_15.cache",
+      "size_bytes": 218830,
+      "extension": ".cache",
+      "created_date": "2025-10-03T02:15:48.541955",
+      "modified_date": "2025-10-03T02:15:48.541955",
+      "accessed_date": "2025-10-03T02:15:48.541955",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_15.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/user_data_37.cache",
+      "name": "user_data_37.cache",
+      "size_bytes": 486690,
+      "extension": ".cache",
+      "created_date": "2025-07-06T02:15:48.542048",
+      "modified_date": "2025-07-06T02:15:48.542048",
+      "accessed_date": "2025-07-06T02:15:48.542048",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: user_data_37.cache"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/transaction_24.log",
+      "name": "transaction_24.log",
+      "size_bytes": 5450882,
+      "extension": ".log",
+      "created_date": "2025-07-27T02:15:48.542163",
+      "modified_date": "2025-07-27T02:15:48.542163",
+      "accessed_date": "2025-07-27T02:15:48.542163",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: transaction_24.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/tmp/.~temp26",
+      "name": ".~temp26",
+      "size_bytes": 6220,
+      "extension": "",
+      "created_date": "2025-01-28T02:15:48.541719",
+      "modified_date": "2025-01-28T02:15:48.541719",
+      "accessed_date": "2025-01-28T02:15:48.541719",
+      "parent_directory": "/tmp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.9,
+      0.95
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "easy",
+    "ground_truth_reasoning": "File matches temporary pattern '.~temp26' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/user_system_6.dll",
+      "name": "user_system_6.dll",
+      "size_bytes": 359503,
+      "extension": ".dll",
+      "created_date": "2025-05-04T02:15:48.542298",
+      "modified_date": "2025-05-04T02:15:48.542298",
+      "accessed_date": "2025-05-04T02:15:48.542298",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: user_system_6.dll"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/temp/old_document_9.pdf",
+      "name": "old_document_9.pdf",
+      "size_bytes": 5433,
+      "extension": ".pdf",
+      "created_date": "2025-09-10T02:15:48.542392",
+      "modified_date": "2025-09-10T02:15:48.542392",
+      "accessed_date": "2025-09-10T02:15:48.542392",
+      "parent_directory": "/home/user/temp",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "user_documents",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "User document: old_document_9.pdf in /home/user/temp"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_18.tmp",
+      "name": "important_18.tmp",
+      "size_bytes": 545058,
+      "extension": ".tmp",
+      "created_date": "2025-08-29T02:15:48.541667",
+      "modified_date": "2025-08-29T02:15:48.541667",
+      "accessed_date": "2025-08-29T02:15:48.541667",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_18.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/etc/service_19.ini",
+      "name": "service_19.ini",
+      "size_bytes": 93219,
+      "extension": ".ini",
+      "created_date": "2025-04-27T02:15:48.542349",
+      "modified_date": "2025-04-27T02:15:48.542349",
+      "accessed_date": "2025-04-27T02:15:48.542349",
+      "parent_directory": "/etc",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.8,
+      0.95
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "System file in /etc: service_19.ini"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/patch_11.so",
+      "name": "patch_11.so",
+      "size_bytes": 90499,
+      "extension": ".so",
+      "created_date": "2025-08-22T02:15:48.542318",
+      "modified_date": "2025-08-22T02:15:48.542318",
+      "accessed_date": "2025-08-22T02:15:48.542318",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: patch_11.so"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_23.log",
+      "name": "security_audit_23.log",
+      "size_bytes": 8323423,
+      "extension": ".log",
+      "created_date": "2025-09-04T02:15:48.542158",
+      "modified_date": "2025-09-04T02:15:48.542158",
+      "accessed_date": "2025-09-04T02:15:48.542158",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_23.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/custom_software/user_system_4.dll",
+      "name": "user_system_4.dll",
+      "size_bytes": 1364309,
+      "extension": ".dll",
+      "created_date": "2025-05-16T02:15:48.542290",
+      "modified_date": "2025-05-16T02:15:48.542290",
+      "accessed_date": "2025-05-16T02:15:48.542290",
+      "parent_directory": "/home/user/custom_software",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "system",
+    "expected_risk_level": "critical",
+    "expected_confidence_range": [
+      0.6,
+      0.8
+    ],
+    "protection_level": "critical",
+    "test_scenario": "system_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "System file in /home/user/custom_software: user_system_4.dll"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/important_5.tmp",
+      "name": "important_5.tmp",
+      "size_bytes": 732778,
+      "extension": ".tmp",
+      "created_date": "2025-03-27T02:15:48.541576",
+      "modified_date": "2025-03-27T02:15:48.541576",
+      "accessed_date": "2025-03-27T02:15:48.541576",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'important_5.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/critical_backup_0.bak",
+      "name": "critical_backup_0.bak",
+      "size_bytes": 3066506,
+      "extension": ".bak",
+      "created_date": "2025-08-03T02:15:48.542189",
+      "modified_date": "2025-08-03T02:15:48.542189",
+      "accessed_date": "2025-08-03T02:15:48.542189",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.2,
+      0.5
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "backup_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Backup file: critical_backup_0.bak (age: 2025-08-03T02:15:48.542189)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_storage_27.db",
+      "name": "config_storage_27.db",
+      "size_bytes": 350101,
+      "extension": ".db",
+      "created_date": "2025-10-02T02:15:48.542010",
+      "modified_date": "2025-10-02T02:15:48.542010",
+      "accessed_date": "2025-10-02T02:15:48.542010",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: config_storage_27.db"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/security_audit_6.log",
+      "name": "security_audit_6.log",
+      "size_bytes": 3649480,
+      "extension": ".log",
+      "created_date": "2025-09-15T02:15:48.542089",
+      "modified_date": "2025-09-15T02:15:48.542089",
+      "accessed_date": "2025-09-15T02:15:48.542089",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "manual_review",
+    "expected_category": "log",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "requires_review",
+    "test_scenario": "log_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Log file in /home/user/documents: security_audit_6.log"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_44.tmp",
+      "name": "document_44.tmp",
+      "size_bytes": 756332,
+      "extension": ".tmp",
+      "created_date": "2025-03-02T02:15:48.541829",
+      "modified_date": "2025-03-02T02:15:48.541829",
+      "accessed_date": "2025-03-02T02:15:48.541829",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "temporary",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.4,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "temporary_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "File matches temporary pattern 'document_44.tmp' in temporary directory"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/document_cache_36",
+      "name": "document_cache_36",
+      "size_bytes": 91125,
+      "extension": ".cache",
+      "created_date": "2025-08-09T02:15:48.542044",
+      "modified_date": "2025-08-09T02:15:48.542044",
+      "accessed_date": "2025-08-09T02:15:48.542044",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "cache",
+    "expected_risk_level": "low",
+    "expected_confidence_range": [
+      0.3,
+      0.6
+    ],
+    "protection_level": "safe",
+    "test_scenario": "cache_files",
+    "difficulty_level": "hard",
+    "ground_truth_reasoning": "Cache file in cache directory: document_cache_36"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/data_4.pdf",
+      "name": "data_4.pdf",
+      "size_bytes": 49404,
+      "extension": ".pdf",
+      "created_date": "2025-06-14T02:15:48.542372",
+      "modified_date": "2025-06-14T02:15:48.542372",
+      "accessed_date": "2025-06-14T02:15:48.542372",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: data_4.pdf in /home/user/downloads"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/documents/config_backup_7.old",
+      "name": "config_backup_7.old",
+      "size_bytes": 64421,
+      "extension": ".old",
+      "created_date": "2025-07-12T02:15:48.542219",
+      "modified_date": "2025-07-12T02:15:48.542219",
+      "accessed_date": "2025-07-12T02:15:48.542219",
+      "parent_directory": "/home/user/documents",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "delete",
+    "expected_category": "backup",
+    "expected_risk_level": "medium",
+    "expected_confidence_range": [
+      0.5,
+      0.7
+    ],
+    "protection_level": "safe",
+    "test_scenario": "backup_files",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "Backup file: config_backup_7.old (age: 2025-07-12T02:15:48.542219)"
+  },
+  {
+    "file_metadata": {
+      "path": "/home/user/downloads/file_5.txt",
+      "name": "file_5.txt",
+      "size_bytes": 122219,
+      "extension": ".txt",
+      "created_date": "2025-05-06T02:15:48.542376",
+      "modified_date": "2025-05-06T02:15:48.542376",
+      "accessed_date": "2025-05-06T02:15:48.542376",
+      "parent_directory": "/home/user/downloads",
+      "is_hidden": false,
+      "is_system": false
+    },
+    "expected_recommendation": "keep",
+    "expected_category": "document",
+    "expected_risk_level": "high",
+    "expected_confidence_range": [
+      0.7,
+      0.9
+    ],
+    "protection_level": "high",
+    "test_scenario": "user_documents",
+    "difficulty_level": "medium",
+    "ground_truth_reasoning": "User document: file_5.txt in /home/user/downloads"
+  }
+]

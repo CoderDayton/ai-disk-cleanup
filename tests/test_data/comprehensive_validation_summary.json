@@ -1,0 +1,57 @@
+{
+  "dataset_name": "comprehensive_validation",
+  "total_cases": 1000,
+  "scenario_distribution": {
+    "edge_cases": 100,
+    "cache_files": 200,
+    "temporary_files": 250,
+    "backup_files": 100,
+    "user_documents": 100,
+    "log_files": 150,
+    "system_files": 100
+  },
+  "difficulty_distribution": {
+    "hard": 291,
+    "medium": 340,
+    "easy": 369
+  },
+  "recommendation_distribution": {
+    "delete": 684,
+    "keep": 223,
+    "manual_review": 93
+  },
+  "category_distribution": {
+    "temporary": 322,
+    "cache": 200,
+    "backup": 100,
+    "document": 100,
+    "log": 150,
+    "system": 100,
+    "unknown": 28
+  },
+  "risk_level_distribution": {
+    "low": 649,
+    "medium": 151,
+    "high": 100,
+    "critical": 100
+  },
+  "protection_level_distribution": {
+    "safe": 684,
+    "requires_review": 130,
+    "high": 80,
+    "critical": 100,
+    "requires_confirmation": 6
+  },
+  "size_statistics": {
+    "min_size": 12,
+    "max_size": 4929277813,
+    "mean_size": 22421890.687,
+    "median_size": 58904.0
+  },
+  "age_statistics": {
+    "min_age_days": -28,
+    "max_age_days": 364,
+    "mean_age_days": 123.2,
+    "median_age_days": 83.0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "dataset_name": "confidence_calibration",
+  "total_cases": 500,
+  "scenario_distribution": {
+    "cache_files": 100,
+    "backup_files": 50,
+    "temporary_files": 125,
+    "system_files": 50,
+    "edge_cases": 50,
+    "log_files": 75,
+    "user_documents": 50
+  },
+  "difficulty_distribution": {
+    "easy": 188,
+    "medium": 183,
+    "hard": 129
+  },
+  "recommendation_distribution": {
+    "delete": 359,
+    "keep": 111,
+    "manual_review": 30
+  },
+  "category_distribution": {
+    "cache": 100,
+    "backup": 50,
+    "temporary": 167,
+    "system": 50,
+    "log": 75,
+    "document": 50,
+    "unknown": 8
+  },
+  "risk_level_distribution": {
+    "low": 334,
+    "medium": 66,
+    "critical": 50,
+    "high": 50
+  },
+  "protection_level_distribution": {
+    "safe": 359,
+    "critical": 50,
+    "requires_review": 48,
+    "high": 37,
+    "requires_confirmation": 6
+  },
+  "size_statistics": {
+    "min_size": 1,
+    "max_size": 4661870994,
+    "mean_size": 50503069.468,
+    "median_size": 51576.0
+  },
+  "age_statistics": {
+    "min_age_days": -19,
+    "max_age_days": 365,
+    "mean_age_days": 116.602,
+    "median_age_days": 77.0
+  }
+}

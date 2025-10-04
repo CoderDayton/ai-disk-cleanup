@@ -1,0 +1,57 @@
+{
+  "dataset_name": "edge_cases",
+  "total_cases": 200,
+  "scenario_distribution": {
+    "temporary_files": 50,
+    "user_documents": 20,
+    "backup_files": 20,
+    "log_files": 30,
+    "edge_cases": 20,
+    "cache_files": 40,
+    "system_files": 20
+  },
+  "difficulty_distribution": {
+    "hard": 135,
+    "medium": 52,
+    "easy": 13
+  },
+  "recommendation_distribution": {
+    "delete": 119,
+    "keep": 53,
+    "manual_review": 28
+  },
+  "category_distribution": {
+    "temporary": 66,
+    "document": 20,
+    "backup": 20,
+    "log": 30,
+    "unknown": 4,
+    "cache": 40,
+    "system": 20
+  },
+  "risk_level_distribution": {
+    "low": 134,
+    "high": 20,
+    "medium": 26,
+    "critical": 20
+  },
+  "protection_level_distribution": {
+    "safe": 119,
+    "high": 11,
+    "requires_review": 49,
+    "critical": 20,
+    "requires_confirmation": 1
+  },
+  "size_statistics": {
+    "min_size": 8,
+    "max_size": 2816323085,
+    "mean_size": 15170825.615,
+    "median_size": 200524.0
+  },
+  "age_statistics": {
+    "min_age_days": -15,
+    "max_age_days": 363,
+    "mean_age_days": 119.335,
+    "median_age_days": 78.0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "array": [
+    {
+      "api_key": "[REDACTED]"
+    },
+    {
+      "normal_data": "visible"
+    }
+  ],
+  "nested": {
+    "password": "[REDACTED]",
+    "public_info": "public_data"
+  },
+  "sensitive_field": "secret_data",
+  "test_field": "test_value"
+}

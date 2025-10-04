@@ -1,0 +1,4 @@
+2025-10-04 02:31:40,782 - __main__ - ERROR - Validation failed: 1 validation error for AppConfig
+ai_model
+  Input should be a valid dictionary or instance of AIModelConfig [type=model_type, input_value=<__main__.AIModel object at 0x7a23b064e120>, input_type=AIModel]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
